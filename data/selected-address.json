@@ -1,0 +1,14 @@
+{
+  "id": "wa-seattle-pike-place-001",
+  "label": "Pike Place Market",
+  "addressLine1": "85 Pike Street",
+  "city": "Seattle",
+  "state": "WA",
+  "postalCode": "98101",
+  "coordinates": {
+    "latitude": 47.609722,
+    "longitude": -122.342222
+  },
+  "sourceTag": "seeded-washington-address",
+  "notes": "Public landmark selected as the initial Washington address for the map demo."
+}

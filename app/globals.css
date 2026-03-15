@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@source "./app/**/*.{ts,tsx}";
+@source "./components/**/*.{ts,tsx}";
+@source "./lib/**/*.{ts,tsx}";
+@source "./types/**/*.{ts,tsx}";
+
+:root {
+  --background: #efe8dc;
+  --foreground: #14213d;
+  --surface: rgba(255, 251, 245, 0.9);
+  --surface-strong: #fffdf8;
+  --muted: #6b7280;
+  --border: rgba(20, 33, 61, 0.12);
+  --accent: #eab308;
+  --accent-strong: #ca8a04;
+  --danger: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family:
+    "Avenir Next",
+    "Segoe UI",
+    sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(202, 138, 4, 0.22), transparent 28%),
+    radial-gradient(circle at top right, rgba(220, 38, 38, 0.14), transparent 25%),
+    linear-gradient(180deg, #f7f1e7 0%, #efe8dc 100%);
+  color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family:
+    "Helvetica Neue",
+    "Arial Narrow",
+    sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-danger: var(--danger);
+}
+
+.map-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  border: 1px solid var(--border);
+  background: #f3efe7;
+  box-shadow: 0 24px 70px rgba(20, 33, 61, 0.16);
+}
+
+.map-grid {
+  background-image:
+    linear-gradient(rgba(20, 33, 61, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 33, 61, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
