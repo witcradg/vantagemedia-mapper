@@ -4,3 +4,11 @@ node_modules
 coverage
 dist
 *.tsbuildinfo
+
+# editor + local session artifacts
+.history
+.letta
+.vscode
+
+# personal scratch, not project files
+temp.md
